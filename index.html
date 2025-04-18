@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form ">
+        <h1>Enter names of Player 1 and Player 2</h1>
+        <form action="#">
+            <input type="text" placeholder="enter 1st player name" id="pn1" maxlength="30" autocomplete="off">
+            <span id="s1"></span>
+            <input type="text" placeholder="Enter 2nd player name" id="pn2" maxlength="30">
+            <span id="s2"></span>
+            <button id="sbt" onclick="startgame()">start game!</button>
+        </form>
+    </div>
+    <div class="msgc hide " >
+        <h1 id="msg"></h1>
+        <button id="restartG" onclick="restartGame()">restart Game</button>
+
+    </div>
+    <div class="container hide" id=" container">
+         <h1 id="topic">Tic tac Toe</h1>
+         <div class="h2">
+            <h2 id="p1"></h2>
+            <h2 id="p2"></h2>
+        </div>
+       
+        <div class="gameContainer" id="gameContainer">
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+        </div>
+        <div class="button">
+            <button id="resetb" onclick="resetGame()">reset game</button>
+            <button id="restartG" onclick="restartGame()">restart Game</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
